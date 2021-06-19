@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sec {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#e91e63));
+  background: linear-gradient(#03a9f4, #e91e63);
+  padding: 100px;
+}
+
+.sec header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec header .logo {
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sec header .navigation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec header .navigation a {
+  color: white;
+  margin-left: 40px;
+}
+
+.sec .content {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.sec .content h2 {
+  color: white;
+  font-size: 5em;
+  line-height: 1em;
+}
+
+.sec .content h2 span {
+  color: white;
+  font-size: 0.7em;
+}
+
+.sec .content p {
+  color: white;
+  margin: 10px 0 20px;
+}
+
+.sec .content a {
+  padding: 10px 30px;
+  background: white;
+  display: inline-block;
+  color: #111;
+}
+
+.sec .custom-shape-divider-bottom-1607735888 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.sec .custom-shape-divider-bottom-1607735888 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.sec .custom-shape-divider-bottom-1607735888 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.sec .girl {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  right: 100px;
+}
+
+@media (max-width: 991px) {
+  .sec {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 40px 40px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec header {
+    padding: 20px 40px;
+  }
+  .sec header .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#e91e63));
+    background: linear-gradient(#03a9f4, #e91e63);
+    z-index: 100;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec header .navigation li a {
+    color: white;
+    margin-left: 0;
+    font-size: 30px;
+  }
+  .sec header .navigation.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sec header .toggleMenu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(/img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .sec header .toggleMenu.active {
+    position: fixed;
+    right: 40px;
+    background: url(/img/close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sec .content {
+    max-width: 100%;
+    margin-top: 120px;
+  }
+  .sec .content h2 {
+    font-size: 3em;
+  }
+  .sec .girl {
+    position: relative;
+    bottom: 0;
+    height: initial;
+    right: initial;
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
